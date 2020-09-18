@@ -1,3 +1,28 @@
-{% for obj in object_list %}
-	<a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a><br/>
-{% endfor%}
+{% include 'base/css.html' %}
+<div class="py-5">
+    <div class="container">
+        {% for obj in object_list %} {% if obj.featured %}
+        <div class="carousel-item">
+            <img src="{{obj.image.url}}">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ obj.title }}</h5>
+                <p>{{ obj.description }}</p>
+            </div>
+        </div>
+        {% endif %} {% endfor%}
+        <div class="row">
+            {% for obj in object_list %}
+            <div class="p-4 col-lg-4 col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{obj.image.url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ obj.title }}</h5>
+                        <p class="card-text">{{ obj.description }}</p>
+                        <a href='{{ obj.get_absolute_url }}' class="btn btn-primary">R$ {{obj.price}}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor%}
+        </div>
+    </div>
+</div>
