@@ -1,3 +1,7 @@
 body {
     color: #ccc;
 }
+
+input {
+    width: 100% !important;
+}

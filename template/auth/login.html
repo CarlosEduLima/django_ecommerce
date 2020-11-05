@@ -1,8 +1,17 @@
-{% extends "base.html" %}
-{% block content %}
-<form method='POST'> 
-    {% csrf_token %}
-    {{ form }}
-    <button type='submit' class='btn btn-default'>Enviar</button>
-</form>
-{% endblock %}
+{% extends "base.html" %} {% block content %}
+<div class="cotainer">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Login</div>
+                <div class="card-body" style="max-width: 200px; margin-left: auto !important; margin-right: auto !important;">
+                    <form method='POST'>
+                        {% csrf_token %} {{ form }}
+                        <button type='submit' class='btn btn-default mt-2'>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
