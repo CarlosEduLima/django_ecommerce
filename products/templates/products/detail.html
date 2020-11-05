@@ -2,15 +2,17 @@
 {% block content %}
 <div class='container'>
     <div class='row'>
-        <div class='col'>
-            <h1>{{ object.title }}</h1>
-            {{ object.timestamp|timesince }}
-            <h3>{{ "Um título qualquer"|title }}</h3>
-            {{ object.description|linebreaks }} <br/>
-            {% if object.image %}
-                <img src='{{ object.image.url }}' class='img-fluid'/>
-            {% endif %}
-        </div>
+    <div class="col-12 col-md-8"> 
+        {% if object.image %}
+            <img src='{{ object.image.url }}' class='img-fluid'/>
+        {% endif %}
+    </div>
+    <div class="col-6 col-md-4">
+    <h1>{{ object.title }}</h1>
+    <spam>{{ object.timestamp|timesince }}</spam>
+    <h3>{{ "Descrição"|title }}</h3>
+    {{ object.description|linebreaks }} <br/>
+    </div>
     </div>
 </div>
 {% endblock content %}
