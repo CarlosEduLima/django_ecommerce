@@ -1,153 +1,136 @@
-{% extends "base.html" %} 
-{% load static %}
+{% extends "base.html" %} {% load static %}
 <title>Home Page Template</title>
 {% block base_head %}
-<link rel='stylesheet' href='{% static "css/main.css" %}'> 
+<link rel='stylesheet' href='{% static "css/main.css" %}'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-{% endblock base_head%} 
-{% block content %}
- <main role="main">
+{% endblock base_head%} {% block content %}
+<main role="main">
     <div class="row">
-    <div class="col-lg-12">
-      <img style="height:400px;width:100%;" src='https://avatarsapphire.s3.us-east-2.amazonaws.com/land.png'/>
-      </div>
-      </div>
+        <div class="col-lg-12" style="padding: 0px 29px 20px 29px;">
+            <img style="height:400px; width:100%; border-radius: 10px;" src='https://avatarsapphire.s3.us-east-2.amazonaws.com/land.png' />
+        </div>
+    </div>
 
-      <div class="container marketing">
+    <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <div class="card card-cascade card-ecommerce wider">
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top"  style="height:250px;width:250px;" src='https://avatarsapphire.s3.us-east-2.amazonaws.com/D_NQ_NP_941627-MLB32280055626_092019-O.webp' alt="">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
+            <div class="col-lg-4">
+                <div class="card card-cascade card-ecommerce wider" style="border-radius: 10px;">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" style="height:250px;width:250px;" src='https://avatarsapphire.s3.us-east-2.amazonaws.com/D_NQ_NP_941627-MLB32280055626_092019-O.webp' alt="">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body card-body-cascade text-center">
+                        <h4 class="card-title"><strong>Tweeter Jbl Selenium</strong></h4>
+                        <p class="card-text">
+                            O Super Tweeter Selenium ST400 é o complemento perfeito para o sistema de som do seu carro, atuando nas frequências de 4 a 20kHz.
+                        </p>
+                        <div class="card-footer bg-transparent">
+                            <h4 class="float-center">R$ 268.99</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body card-body-cascade text-center">
-                  <h4 class="card-title"><strong>Tweeter Jbl Selenium</strong></h4>
-                  <p class="card-text">
-                  O Super Tweeter Selenium ST400 é o complemento perfeito para o sistema de som do seu carro, atuando nas 
-                  frequências de 4 a 20kHz, dando mais voz e desempenho para qualquer projeto.
-                  </p>
-                  <div class="card-footer bg-transparent">
-                    <h4 class="float-right">R$ 49,80</h4>
-                    <span class="float-left">
-                        <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
-                    </span>
-                  </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-cascade card-ecommerce wider" style="border-radius: 10px;">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" style="height:250px;width:250px;" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/D_NQ_NP_932273-MLB43291787401_082020-O.webp" alt="">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body card-body-cascade text-center">
+                        <h4 class="card-title"><strong>Módulo Amplificador Stetsom</strong></h4>
+                        <p class="card-text">
+                            Equalizador com três bandas: BASS, MID BASS, MID HIGH, além dos tradicionais recursos Level, High Pass e Low Pass. 
+                        </p>
+                        <div class="card-footer bg-transparent">
+                            <h4 class="float-center">R$ 712.21</h4>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-cascade card-ecommerce wider">
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top" style="height:250px;width:250px;" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/D_NQ_NP_932273-MLB43291787401_082020-O.webp"
-                    alt="">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-cascade card-ecommerce wider" style="border-radius: 10px;">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" float-center style="height:250px;width:250px;" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/D_NQ_NP_916510-MLB31136954710_062019-O.webp" alt="">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body card-body-cascade text-center">
+                        <h4 class="card-title"><strong>Woofer Magnum Rex Power</strong></h4>
+                        <p class="card-text">
+                            Woofer Magnum Rex Power 8" 550W RMS Especificações Técnicas: - Modelo: Rex Power 8RP-550 …
+                        </p>
+                        <div class="card-footer bg-transparent">
+                            <h4 class="float-center">R$ 239.90</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body card-body-cascade text-center">
-                  <h5>Shoes</h5>
-                  <h4 class="card-title"><strong>Módulo Amplificador Stetsom</strong></h4>
-                  <p class="card-text">
-                  Equalizador com três bandas: BASS, MID BASS, MID HIGH, além dos tradicionais recursos Level, High Pass e Low Pass.
-EQ Bass: -10dB a +10dB
-EQ Mid-Bass: -10dB a +10dB
-EQ Mid-High: -10dB a +10dB
-</p>
-                  <div class="card-footer bg-transparent">
-                    <h4 class="float-right">R$ 49,80</h4>
-                    <span class="float-left">
-                        <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-          </div>
-          
-          <div class="col-lg-4">
-            <div class="card card-cascade card-ecommerce wider">
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top" style="height:250px;width:250px;alin" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/D_NQ_NP_916510-MLB31136954710_062019-O.webp"
-                    alt="">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-                <div class="card-body card-body-cascade text-center">
-                  <h5>Shoes</h5>
-                  <h4 class="card-title"><strong>Woofer Magnum Rex Power</strong></h4>
-                  <p class="card-text">
-                  Woofer Magnum Rex Power 8" 550W RMS Especificações Técnicas: - Modelo: Rex Power 8RP-550 …
-                  </p>
-                  <div class="card-footer bg-transparent">
-                    <h4 class="float-right">R$ 49,80</h4>
-                    <span class="float-left">
-                        <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-          </div>
+            </div>
         </div>
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">L200 da Estilo Dub Montada na Deboxe</h2>
-            <p class="lead">
-            Estilo Dub é um dos clientes que confia em na qualidade dos nossos produtos.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/l200.jpg" alt="Generic placeholder image">
-          </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">L200 da Estilo Dub Montada na Deboxe</h2>
+                <p class="lead">
+                    Estilo Dub é um dos clientes que confia em na qualidade dos nossos produtos.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/l200.jpg" alt="Generic placeholder image">
+            </div>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Deboxe Goiânia</h2>
-            <p class="lead">
-            A Abelvolks é um dos nosso principais clientes. 
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/abelvolks.png" alt="Generic placeholder image">
-          </div>
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Deboxe Goiânia</h2>
+                <p class="lead">
+                    A Abelvolks é um dos nossos principais clientes.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/abelvolks.png" alt="Generic placeholder image">
+            </div>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Deboxe</span></h2>
-            <p class="lead">
-           A deboxe foi um de nosso primeiros clientes
-           </p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/deboxe.png" alt="Generic placeholder image">
-          </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Deboxe</span>
+                </h2>
+                <p class="lead">
+                    A deboxe foi um de nossos primeiros clientes
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="https://avatarsapphire.s3.us-east-2.amazonaws.com/deboxe.png" alt="Generic placeholder image">
+            </div>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
 
-      </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 UpSound, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; 2020 UpSound, Inc. &middot; <a href="#">Política de Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+</main>
 </div>
 {% endblock %}
